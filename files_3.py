@@ -43,3 +43,16 @@ for line in fhand:
     if line.startswith('Gus:') :
         count = count + 1
 print('There were', count, 'Gus speaking lines in', fname)
+
+#lists
+students = ['Cody', 'Marlow', 'Henry', 'Theodore']
+print(len(students))
+print(range(len(students)))
+
+for student in students :
+    print(student, 'is a student in the class.')
+    
+for i in range(len(students)) :
+    student = students[i]
+    print(student, 'is a student.')
+    

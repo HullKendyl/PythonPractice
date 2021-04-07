@@ -56,3 +56,7 @@ for i in range(len(students)) :
     student = students[i]
     print(student, 'is a student.')
     
+#indexing example
+fruit = "banana"
+x = fruit[1]
+print(x)

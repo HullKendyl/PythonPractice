@@ -60,3 +60,25 @@ for i in range(len(students)) :
 fruit = "banana"
 x = fruit[1]
 print(x)
+
+#concatenating lists using +
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = a + b
+print(a)
+print(b)
+print(a + b)
+print(c)
+
+#slicing lists
+numbers = [5, 6, 7, 8, 9]
+numbers[2:4]
+numbers[:4]
+numbers[3:]
+numbers[:]
+
+#build list from scratch
+coding_languages = list()
+coding_languages.append('Python')
+coding_languages.append('Java')
+print(coding_languages)

@@ -31,9 +31,13 @@ for line in fhand:
         continue
     print(line)
 
-# prompt for file name
+# prompt for file name & add try except block
 fname = input('Enter the file name: ')
-fhand = open(fname)
+try:
+    fhand = open(fname)
+except:
+    print('File name does not exist. File cannot be opened:', fname)
+    quit()
 count = 0
 for line in fhand: 
     if line.startswith('Gus:') :

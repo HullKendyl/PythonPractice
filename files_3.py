@@ -30,3 +30,12 @@ for line in fhand:
     if not 'Dog' in line :
         continue
     print(line)
+
+# prompt for file name
+fname = input('Enter the file name: ')
+fhand = open(fname)
+count = 0
+for line in fhand: 
+    if line.startswith('Gus:') :
+        count = count + 1
+print('There were', count, 'Gus speaking lines in', fname)

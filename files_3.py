@@ -87,3 +87,20 @@ coding_languages.sort()
 print(coding_languages)
 print(coding_languages[1])
 print(len(coding_languages))
+
+#relating strings & lists
+abc = 'yes I can'
+split = abc.split()
+print(split)
+print(len(split))
+print(split[0])
+
+placement = 'first;second;third'
+separate = placement.split(';')
+print(separate)
+
+words = 'His e-mail is q-lar@freecodecamp.org'
+pieces = words.split()
+parts = pieces[3].split('-')
+n = parts[1]
+print(n)

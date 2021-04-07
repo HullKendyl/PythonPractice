@@ -15,9 +15,18 @@ mylist = ["apple", "orange", "cherry", "pear"]
 x = len(mylist)
 print('Total Number of Fruit: ', x)
 
-#search
+#search using prefix
 fhand = open('textFile.txt')
 for line in fhand:
+    #rstrip() removes the whitespace line between lines of text
+    line = line.rstrip()
     if line.startswith('Gus:') :
         print(line)
-
+        
+# using in operator
+fhand = open('textFile.txt')
+for line in fhand:
+    line = line.rstrip()
+    if not 'Dog' in line :
+        continue
+    print(line)

@@ -15,3 +15,9 @@ mylist = ["apple", "orange", "cherry", "pear"]
 x = len(mylist)
 print('Total Number of Fruit: ', x)
 
+#search
+fhand = open('textFile.txt')
+for line in fhand:
+    if line.startswith('Gus:') :
+        print(line)
+

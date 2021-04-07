@@ -1,4 +1,4 @@
-fhand = open('mbox.txt')
+fhand = open('textFile.txt')
 print(fhand)
 
 stuff = 'Hello\nWorld!'
